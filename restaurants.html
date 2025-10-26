@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurants in Umerkot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #F4F5F2;
+      color: #2F3E46;
+      line-height: 1.6;
+    }
+
+    header nav {
+      background: #519292;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: #98C9C6;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      background: #9EDFE1;
+      color: #2F3E46;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #D0C9C9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      color: #519292;
+      margin-bottom: 20px;
+    }
+
+    .restaurants-intro p,
+    .restaurant p,
+    .dining-tips ul {
+      margin-bottom: 16px;
+    }
+
+    .restaurant {
+      margin-bottom: 30px;
+    }
+
+    .restaurant-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .dining-tips ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #519292;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width:768px){
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+       <li><a href="Home.html">Home</a></li>
+    <li><a href="historical.html">Historical Sites</a></li>
+    <li><a href="Religious & Spiritual Places.html">Religious Places</a></li>
+    <li><a href="shopping.html">Markets & Shopping</a></li>
+    <li><a href="restaurants.html">Restaurants & Food</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="travel.html">Travel Tips</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="restaurants-intro">
+      <h1>Top Restaurants in Umerkot</h1>
+      <p>Umerkot offers a variety of dining experiences, from traditional Pakistani dishes to international cuisines. Whether you're looking for a fine dining experience or a casual local eatery, Umerkot has it all!</p>
+    </section>
+    <hr><br>
+
+    <section class="restaurant-list">
+      <h2>Popular Dining Spots</h2>
+
+      <div class="restaurant">
+        <img src="webimages/megh.jpeg" alt="The Megh Malhaar Restaurant" class="restaurant-img">
+        <h3>The Megh Malhaar Restaurant</h3>
+        <p>Known for its delicious kebabs and grilled specialties, The Megh Malhaar offers an authentic taste of Pakistani BBQ.</p>
+        <p><strong>Location:</strong> Kantio Road, Umerkot</p>
+        <p><strong>Cuisine:</strong> Pakistani, BBQ</p>
+      </div>
+
+      <div class="restaurant">
+        <img src="webimages/dua.jpeg" alt="Dua Restaurant" class="restaurant-img">
+        <h3>Dua Restaurant</h3>
+        <p>A modern restaurant serving a variety of spicy curries, traditional stews, and vegetarian options.</p>
+        <p><strong>Location:</strong> Mirpurkhas–Umerkot Road, Umerkot</p>
+        <p><strong>Cuisine:</strong> Pakistani</p>
+      </div>
+
+      <div class="restaurant">
+        <img src="webimages/sodha.jpeg" alt="Sodha Restaurants" class="restaurant-img">
+        <h3>Sodha Restaurants</h3>
+        <p>Perfect for those who enjoy international dishes. Sodha offers both Asian and Western food in a comfortable, family-friendly atmosphere.</p>
+        <p><strong>Location:</strong> Near Akheraj Village, Umerkot</p>
+        <p><strong>Cuisine:</strong> Continental, Asian</p>
+      </div>
+    </section>
+
+    <section class="dining-tips">
+      <h2>Dining Tips in Umerkot</h2>
+      <ul>
+        <li>Many restaurants offer outdoor seating to enjoy the warm weather.</li>
+        <li>If you’re unfamiliar with local dishes, ask the staff for recommendations.</li>
+        <li>Don’t forget to try traditional sweets such as "Gulab Jamun" and "Kheer" for dessert.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Umerkot Tourism. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

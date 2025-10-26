@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Umerkot</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #F3F9F7;
+      color: #2F3E46;
+      line-height: 1.6;
+    }
+
+    header nav {
+      background-color: #519292;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 14px;
+      background-color: #7FC8A9;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #A5D6C1;
+      color: #2F3E46;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .contact-intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-intro h1 {
+      color: #417D7A;
+      margin-bottom: 10px;
+    }
+
+    .contact-form h2,
+    .contact-info h2 {
+      color: #417D7A;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #CCC;
+      border-radius: 6px;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #417D7A;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #619A8A;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #519292;
+      color: white;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 8px 0;
+      }
+
+      main {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+    <li><a href="historical.html">Historical Sites</a></li>
+    <li><a href="Religious & Spiritual Places.html">Religious Places</a></li>
+    <li><a href="shopping.html">Markets & Shopping</a></li>
+    <li><a href="restaurants.html">Restaurants & Food</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="travel.html">Travel Tips</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-intro">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you! If you have any questions, suggestions, or inquiries about Umerkot, feel free to get in touch using the contact form below or via the provided contact information.</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Form</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>Our Contact Information</h2>
+      <p><strong>Address:</strong> Umerkot, Sindh, Pakistan</p>
+      <p><strong>Email:</strong> contact@umerkottourism.com</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Umerkot Tourism. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

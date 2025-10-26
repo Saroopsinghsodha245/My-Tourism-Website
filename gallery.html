@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Umerkot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #F0F4F3;
+      color: #2F3E46;
+    }
+
+    header nav {
+      background-color: #519292;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 16px;
+      background-color: #7FC8A9;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #A5D6C1;
+      color: #2F3E46;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #417d7a;
+      margin-bottom: 10px;
+    }
+
+    .gallery-intro p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item h3 {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #519292;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 8px 0;
+      }
+
+      .gallery-item img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+    <li><a href="historical.html">Historical Sites</a></li>
+    <li><a href="Religious & Spiritual Places.html">Religious Places</a></li>
+    <li><a href="shopping.html">Markets & Shopping</a></li>
+    <li><a href="restaurants.html">Restaurants & Food</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="travel.html">Travel Tips</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-intro">
+      <h1>Umerkot Tourism Gallery</h1>
+      <p>Explore the beauty of Umerkot through our photo gallery. From historic landmarks to natural landscapes, experience the essence of this vibrant city through images.</p>
+    </section>
+    <hr><br>
+
+    <section class="gallery-container">
+      <div class="gallery-item">
+        <img src="webimages/ukk.jpeg" alt="Historical Landmark">
+        <h3>Historical Landmark</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="webimages/lady.jpeg" alt="Lady doing Embroidery">
+        <h3>Lady Doing Embroidery</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="webimages/shi.jpeg" alt="Shiv Mandir">
+        <h3>Famous Shiv Mandir</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="webimages/thar.jpg" alt="Local Market">
+        <h3>Local Market</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="webimages/megh.jpeg" alt="Famous Restaurant">
+        <h3>Most Famous Restaurant</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Umerkot Tourism. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

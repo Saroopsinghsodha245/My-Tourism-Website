@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historical & Attractions - Umerkot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #F4F5F2;
+      color: #2F3E46;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #519292;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 12px 0;
+    }
+
+    .nav-menu li {
+      margin: 5px 10px;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: #98C9C6;
+      transition: all 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      background-color: #9EDFE1;
+      color: #2F3E46;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #D0C9C9;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      color: #519292;
+      margin-bottom: 20px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .site {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #F4F5F2;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .site:hover {
+      transform: translateY(-3px);
+    }
+
+    .site img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .site div {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .site h2 {
+      color: #2F3E46;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #519292;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-direction: column;
+        display: none;
+        background-color: #519292;
+      }
+
+      .nav-menu.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+
+      .site {
+        flex-direction: column;
+      }
+
+      .site img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Scroll to Top */
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #519292;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 14px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    #topBtn:hover {
+      background-color: #3a6f6f;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-menu" id="navLinks">
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="historical.html">Historical Sites</a></li>
+    <li><a href="Religious & Spiritual Places.html">Religious Places</a></li>
+    <li><a href="shopping.html">Markets & Shopping</a></li>
+    <li><a href="restaurants.html">Restaurants & Food</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="travel.html">Travel Tips</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <h1>Historical & Attractions Sites of Umerkot</h1>
+  <p>Umerkot is home to some of the most historically significant sites in Sindh, Pakistan. It holds a rich cultural heritage, making it a must-visit destination for history lovers.</p>
+
+  <section class="site">
+    <img src="webimages/fort.jpeg" alt="Umerkot Fort">
+    <div>
+      <h2>Umerkot Fort</h2>
+      <p>This historic fort is where the Mughal Emperor Akbar was born. It stands as a proud testament to Umerkot’s military and architectural past.</p>
+    </div>
+  </section>
+
+  <section class="site">
+    <img src="webimages/akb.jpeg" alt="Akbar's Birthplace">
+    <div>
+      <h2>Akbar's Birthplace Monument</h2>
+      <p>Inside the Umerkot Fort lies a monument marking the birthplace of Emperor Akbar, drawing historians and tourists alike.</p>
+    </div>
+  </section>
+
+  <section class="site">
+    <img src="webimages/mp.jpg" alt="Rana Mehtab Singh Palace">
+    <div>
+      <h2>Rana Mehtab Singh Palace</h2>
+      <p>A historic palace showcasing the grandeur of Rajput architecture and heritage of Umerkot's royal legacy.</p>
+    </div>
+  </section>
+
+  <section class="site">
+    <img src="webimages/st.jpeg" alt="Shiva Temple">
+    <div>
+      <h2>Shiva Temple</h2>
+      <p>One of the oldest temples in Sindh, this site is sacred for the Hindu community and reflects the town’s spiritual diversity.</p>
+    </div>
+  </section>
+
+  <section class="site">
+    <img src="webimages/msm.jpeg" alt="Umerkot Museum">
+    <div>
+      <h2>Umerkot Museum</h2>
+      <p>This museum houses valuable artifacts, manuscripts, and cultural displays from Umerkot's rich past.</p>
+    </div>
+  </section>
+
+  <p>These sites make Umerkot a truly unique destination for those seeking both history and harmony in heritage.</p>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Umerkot Tourism | All Rights Reserved</p>
+</footer>
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('show');
+  }
+
+  // Hover effect with JavaScript
+  document.addEventListener("DOMContentLoaded", () => {
+    const siteSections = document.querySelectorAll('.site');
+
+    siteSections.forEach(site => {
+      site.addEventListener('mouseenter', () => {
+        site.classList.add('active');
+      });
+
+      site.addEventListener('mouseleave', () => {
+        site.classList.remove('active');
+      });
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
